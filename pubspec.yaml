@@ -1,7 +1,7 @@
 name: graph_package
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: Basic Graph with data
+version: 0.0.4
+homepage: https://github.com/lokeshpadharthi17062001/graph_package
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
