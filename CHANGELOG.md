@@ -12,3 +12,6 @@ Added Sample Data
 
 ## 0.0.5
 Added Example
+
+## 0.0.6
+Fixed Bug

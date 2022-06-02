@@ -1,6 +1,6 @@
 name: graph_package
 description: HR Zones Graph by passing required data through json file you can give your own title through same json file
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/lokeshpadharthi17062001/graph_package
 
 environment:
