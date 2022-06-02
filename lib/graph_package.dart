@@ -141,7 +141,7 @@ class Graphcls extends CustomPainter {
       a.add((((count) * (x.length - 1) / (numOfPoints - 1))).round());
     } //x-points
     for (int i = 0; i < a.length; i++) {
-      pl.insert(i, Offset(x1[i], size.height - 50));
+      pl.insert(i, Offset(double.parse(x1[i].toString()), size.height - 50));
       b.add(myData['x'][a[i]].substring(11, 16));
       TextSpan span =
           TextSpan(style: const TextStyle(color: Colors.black), text: b[i]);
@@ -181,7 +181,7 @@ class Graphcls extends CustomPainter {
         text: myData['title']);
     TextPainter tp = TextPainter(text: span, textDirection: TextDirection.ltr);
     tp.layout();
-    Offset point = Offset((size.width - 50 - 50) / 2, 0);
+    Offset point = Offset((size.width - 50 - 50) / 2, size.height - 80 - (l[l.length - 1])-25);
     tp.paint(canvas, point);
   }
 
