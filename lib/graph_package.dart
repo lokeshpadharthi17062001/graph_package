@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 
 class Graphcls extends CustomPainter {
   Map<String, dynamic> myData;
+
   Graphcls(this.myData);
+
   @override
   void paint(Canvas canvas, Size size) {
     var x = [];
@@ -181,7 +183,8 @@ class Graphcls extends CustomPainter {
         text: myData['title']);
     TextPainter tp = TextPainter(text: span, textDirection: TextDirection.ltr);
     tp.layout();
-    Offset point = Offset((size.width - 50 - 50) / 2, size.height - 80 - (l[l.length - 1])-25);
+    Offset point = Offset(
+        (size.width - 50 - 50) / 2, size.height - 80 - (l[l.length - 1]) - 25);
     tp.paint(canvas, point);
   }
 
