@@ -1,5 +1,5 @@
 name: graph_package
-description: HR Zones Graph by passing required data through json file which includes title,axes labels
+description: HR Zones Graph by passing required data through json file which includes title, axes labels
 version: 0.0.7
 homepage: https://github.com/lokeshpadharthi17062001/graph_package
 
