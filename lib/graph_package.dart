@@ -11,10 +11,8 @@ class Graphcls extends CustomPainter {
     var points = [];
     var n = (size.width - 100);
     for (int i = 0; i < myData['x'].length; i++) {
-      var ii=x.indexOf(':');
-      x.add((double.parse(myData['x'][i].substring(ii-2, ii))) * 3600 +
-          (double.parse(myData['x'][i].substring(ii+1, ii+3))) * 60 +
-          (double.parse(myData['x'][i].substring(ii+4, ii+6))));
+      DateTime dt = DateTime.parse(myData['x'][i]);
+      x.add(dt.hour * 3600 + dt.minute * 60 + dt.second);
     }
 
     var x11 = [];
